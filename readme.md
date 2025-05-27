@@ -5,7 +5,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 ## Pré-requisitos
 
 - Python 3.10 ou superior instalado
-- [Git]([url](https://git-scm.com/downloads))
+- [Git](https://git-scm.com/downloads)
 - [Docker](https://www.docker.com/get-started/)
 
 ## Passos para subir o projeto
