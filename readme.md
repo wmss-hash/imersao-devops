@@ -9,11 +9,8 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ## Passos para subir o projeto
 
-1. **Clone o repositório (opcional):**
-   ```sh
-   git clone <url-do-repositorio>
-   cd <nome-da-pasta>
-   ```
+1. **Faça o download do repositório:**
+   [Clique aqui para realizar o download]([url](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip))
 
 2. **Crie um ambiente virtual:**
    ```sh
