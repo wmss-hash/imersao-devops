@@ -1,0 +1,17 @@
+services:
+  api:
+    # Constrói a imagem a partir do Dockerfile no diretório atual (.)
+    build: .
+    # Nome do contêiner para fácil identificação
+    container_name: api
+    # Sobrescreve o comando padrão do Dockerfile para incluir o --reload,
+    # que é ótimo para desenvolvimento, pois reinicia o servidor a cada alteração no código.
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    # Mapeia a porta 8000 do seu computador para a porta 8000 do contêiner
+    ports:
+      - "8000:8000"
+    # Monta o diretório atual (onde está seu código) dentro do contêiner.
+    # Isso permite que as alterações no código sejam refletidas imediatamente
+    # e também garante que o banco de dados 'escola.db' seja salvo no seu computador.
+    volumes:
+      - .:/app
